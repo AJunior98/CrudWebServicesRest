@@ -1,6 +1,6 @@
 # Crud_WebServicesRest
 
-## Este é um projeto Spring boot, contendo um CRUD completo de web services REST para acessar um recurso de clientes, neste projeto contém cinco operações basicas:
+Este é um projeto Spring boot, contendo um CRUD completo de web services REST para acessar um recurso de clientes, neste projeto contém cinco operações basicas:
 
 - Busca paginada de recursos
 - Busca de recursos por Id
