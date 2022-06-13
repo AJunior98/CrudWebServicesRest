@@ -67,13 +67,14 @@ Seed utilizado no projeto
 ```
 ## Arquivos de configuração utilizados
 ## application.properties
-
+Aqui configuramos em qual ambiente queremos rodar a aplicação (teste, homologação ou produção) e também é feito a atribuição do "false" para que o acesso ao banco seja finalizado na camada de serviço entregando somente a resposta para o controlador Rest.
 ```
 spring.profiles.active=test
 
 spring.jpa.open-in-view=false
 ```
 ## application-test.properties
+Configuração do banco H2
 ```
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.username=sa
@@ -83,6 +84,7 @@ spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
 ```
 ## application-dev.properties
+Configuração do banco para homologação e produção (Postgresql)
 ```
 spring.jpa.properties.javax.persistence.schema-generation.create-source=metadata
 spring.jpa.properties.javax.persistence.schema-generation.scripts.action=create
@@ -97,6 +99,8 @@ spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
 spring.jpa.hibernate.ddl-auto=none
 ```
 ## application-prod.properties
+Configuração do banco de produção
+
 ```
 spring.datasource.url=${DATABASE_URL}
 
