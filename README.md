@@ -8,7 +8,7 @@ Este é um projeto Spring boot, contendo um CRUD completo de web services REST p
 - Update de recurso
 - Delete de recurso
 
-O projeto esta com ambiente de testes configurado acessando o banco de dados H2, usando Maven como gerenciador de dependência, e Java 11 e 17 como linguagem.
+O projeto esta com ambiente de testes configurado acessando o banco de dados H2, usando Maven como gerenciador de dependência, e Java 17 como linguagem.
 
 ## Especificações da classe utilizada
 
