@@ -3,12 +3,14 @@ package com.ajunior.webservicerest.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
-import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-import org.springframework.data.annotation.Id;
-
+@Entity
+@Table(name = "tb_client")
 public class Client implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
@@ -18,8 +20,6 @@ public class Client implements Serializable{
 	private String name;
 	private String cpf;
 	private Double income;
-	
-	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private String birthDate;
 	private Integer children;
 	
