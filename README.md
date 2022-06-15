@@ -118,3 +118,10 @@ spring.jpa.hibernate.ddl-auto=none
 spring.jpa.show-sql=false
 spring.jpa.properties.hibernate.format_sql=false
 ```
+## Parâmetros de paginação
+```
+@RequestParam(value = "page", defaultValue = "0") Integer page,
+@RequestParam(value = "linesPerPage", defaultValue = "5") Integer linesPerPage,
+@RequestParam(value = "direction", defaultValue = "ASC") String direction,
+@RequestParam(value = "orderBy", defaultValue = "name") String orderBy
+```
