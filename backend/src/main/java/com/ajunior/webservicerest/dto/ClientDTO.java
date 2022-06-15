@@ -1,6 +1,7 @@
 package com.ajunior.webservicerest.dto;
 
 import java.io.Serializable;
+import java.time.Instant;
 
 import com.ajunior.webservicerest.entities.Client;
 
@@ -11,13 +12,13 @@ public class ClientDTO implements Serializable{
 	private String name;
 	private String cpf;
 	private Double income;
-	private String birthDate;
+	private Instant birthDate;
 	private Integer children;
 	
 	public ClientDTO() {
 	}
 
-	public ClientDTO(Long id, String name, String cpf, Double income, String birthDate, Integer children) {
+	public ClientDTO(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {
 		this.id = id;
 		this.name = name;
 		this.cpf = cpf;
@@ -67,11 +68,11 @@ public class ClientDTO implements Serializable{
 		this.income = income;
 	}
 
-	public String getBirthDate() {
+	public Instant getBirthDate() {
 		return birthDate;
 	}
 
-	public void setBirthDate(String birthDate) {
+	public void setBirthDate(Instant birthDate) {
 		this.birthDate = birthDate;
 	}
 
