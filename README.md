@@ -143,3 +143,7 @@ spring.jpa.properties.hibernate.format_sql=false
 @RequestParam(value = "direction", defaultValue = "ASC") String direction,
 @RequestParam(value = "orderBy", defaultValue = "name") String orderBy
 ```
+
+## Postman
+Abaixo a collection utilizada no Postman caso deseje testar as funcionalidades:
+https://www.getpostman.com/collections/c00dfe14e6aa0b0d5a16
